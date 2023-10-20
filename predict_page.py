@@ -30,10 +30,10 @@ def show_predict_page():
     st.write("### We need some information to predict the subscription")
 
     age = st.slider('Age', 18, 100, 18)
-    duration = st.number_input("Call Duration(min)", min_value=0)
+    duration = st.number_input("Call Duration (seconds)", min_value=0)
     # pdays = st.number_input("Number of days that passed by after the client was last contacted from a previous campaign", min_value=-1)
     previous = st.number_input("Number of contacts performed before this campaign", min_value=0)
-    balance = st.number_input('Account Balance($)', min_value=-10000)
+    balance = st.number_input('Account Balance ($)', min_value=-10000)
     marital = st.selectbox("Marital Status", tuple(marital_dict.keys()))
     job = st.selectbox("Job", tuple(job_dict.keys()))
     poutcome = st.selectbox("Outcome of the last campaign", tuple(poutcome_dict.keys()))
