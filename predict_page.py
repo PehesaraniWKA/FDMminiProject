@@ -9,10 +9,11 @@ import pickle as pk
 with open('random_forest_model.pkl', 'rb') as model_file:
    random_forest_model = pk.load(model_file)
 
-# month_dict = {'January': 1, 'February': 2, 'March': 3, 'April': 4, 'May': 5, 'June': 6, 'July': 7, 'August': 8, 'September': 9, 'October': 10, 'November': 11, 'December': 12}
 marital_dict = {'married': 1, 'single': 2, 'divorced': 3}
 poutcome_dict = {'failure': 1, 'other': 2, 'success': 3}
 job_dict = {'admin.': 0, 'services': 1, 'management': 2, 'blue-collar': 3, 'technician': 4, 'unemployed': 5, 'entrepreneur': 6, 'housemaid': 7, 'retired': 8, 'self-employed': 9, 'student': 10}
+# month_dict = {'January': 1, 'February': 2, 'March': 3, 'April': 4, 'May': 5, 'June': 6, 'July': 7, 'August': 8, 'September': 9, 'October': 10, 'November': 11, 'December': 12}
+
 
 def get_value(val, my_dict):
     for key, value in my_dict.items():
