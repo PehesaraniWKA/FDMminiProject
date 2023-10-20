@@ -1,3 +1,4 @@
-def show_predict_page():
-
- show_predict_page()
+import streamlit as st
+import numpy as np
+import pandas as pd
+import pickle as pk
